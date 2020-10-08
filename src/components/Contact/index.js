@@ -37,7 +37,7 @@ function ContactForm() {
 
     return (
         <section>
-            <h1>Contact Me</h1>
+            <h1 data-testid="h1tag">Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 {/* name input
                 email input
@@ -59,7 +59,7 @@ function ContactForm() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="sumbit">Submit</button>
+                <button type="sumbit" data-testid="formbuttontag">Submit</button>
             </form>
         </section>
     );
